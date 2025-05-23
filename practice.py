@@ -106,3 +106,22 @@
 #     else:
 #         print("price is 3500")
 
+#12. A school decided to replace the desks in three classrooms. Each desk sits two students. 
+# Given the number of students in each class, print the smallest possible number of desks that can be purchased. 
+# The program should read three integers: the number of students in each of the three
+# classes, a, b and c respectively. 
+# Hint. In the first test there are three groups. The first group has 20 students and thus needs 10 desks. The second group has 21 students, so they can get by with no fewer than 11 desks. 11 desks are also enough for the third
+# group of 22 students. So, we need 32 desks in total.
+
+# import math
+
+# class_a = int(input("Enter the number of students in 1st class: "))
+# class_b = int(input("Enter the number of students in 2nd class: "))
+# class_c = int(input("Enter the number of students in 3rd class: "))
+
+# desks_a = math.ceil(class_a / 2)
+# desks_b = math.ceil(class_b / 2)
+# desks_c = math.ceil(class_c / 2)
+
+# total_desks = desks_a + desks_b + desks_c
+# print("Total number of desks that can be purchased:", total_desks)
