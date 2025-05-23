@@ -73,3 +73,36 @@
 #         print("Your fine is Rs. 500")
 #     else:
 #         print("Your fine is Rs 1000")
+
+
+# 5. Determine room price based on guest type and season:
+# If guest is "member":
+# If season is "peak" → Rs. 4000
+# Else → Rs. 3000
+# If guest is "non-member":
+# If season is "peak" → Rs. 5000
+# Else → Rs. 3500
+# Take guest type and season as input and print the room price using nested if-else.
+
+
+# guest=input("Type 'yes' if you are member of the Hotel " ).lower()
+# entry=int(input("Enter the month of entry as number : "))
+# if(entry>=1 and entry<=6):
+#     print("Peak Season")
+#     season="peak_season"
+# elif(entry>6 and entry<=12):
+#     print("Non-Peak Season : ")
+#     season="non_peak_season"
+    
+    
+# if(guest=="yes"):
+#     if(season=="peak_season"):
+#         print("Price is 4000")
+#     else:
+#         print("price is 3000")
+# else:
+#     if(season=="non_peak_season"):
+#         print("price is 5000")
+#     else:
+#         print("price is 3500")
+
