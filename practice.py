@@ -125,3 +125,33 @@
 
 # total_desks = desks_a + desks_b + desks_c
 # print("Total number of desks that can be purchased:", total_desks)
+
+# 13. N students take K apples and distribute them among each other evenly. 
+# The remaining (the indivisible) part remains in the basket. How many apples will each single student get?
+# How many apples will remain in the basket? The program reads the numbers N and K. It should print the two answers for the
+# questions above.
+
+# N=int(input("Enter the number of student : "))
+# K=int(input("Enter the number of Apple : "))
+
+# apples_per_student = K // N
+# apples_remaining = K % N
+
+# print("Each student will get:", apples_per_student, "apples")
+# print("Apples remaining in the basket:", apples_remaining)
+
+# 14. Wtite a program to check whether a person is eligible for voting or not.
+# (accept age from user)
+# age=int(input("enter your age:"))
+# nationality=input("enter your nationality:").strip().lower()
+# if age>=18 and nationality == "nepali":
+#     print("you are eligible to vote")
+# else:
+#     print("you are not eligible to vote")
+
+# 15. Write a program to weather a number (accepted from user) is divisible by 2 and 3 both.
+a=int(input("Enter a number:"))
+if a%2==0 and a%3==0 :
+    print(f"the number {a} is divisible by 2 and 3")
+else:
+    print(f"the number {a} is not divisible by 2 and 3")
