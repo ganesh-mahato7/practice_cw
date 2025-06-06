@@ -150,8 +150,292 @@
 #     print("you are not eligible to vote")
 
 # 15. Write a program to weather a number (accepted from user) is divisible by 2 and 3 both.
-a=int(input("Enter a number:"))
-if a%2==0 and a%3==0 :
-    print(f"the number {a} is divisible by 2 and 3")
-else:
-    print(f"the number {a} is not divisible by 2 and 3")
+# a=int(input("Enter a number:"))
+# if a%2==0 and a%3==0 :
+#     print(f"the number {a} is divisible by 2 and 3")
+# else:
+#     print(f"the number {a} is not divisible by 2 and 3")
+    
+
+# for i in range(5,10,1):
+#     print(i,"ram")
+# a=[1,2,3,4]
+# for i in range(-1,-5,-1):
+#     print(i,'=',a[i])
+
+
+# b=int(input("enter a number:"))
+# for i in range(1,11):
+#     a=b*i
+#     print(b,'*',i,'=',a)
+
+# a=[1,2,3,4]
+# for i in range(1,4,2):
+#     print(a[i])
+    
+# library=['python','maths','software design']
+# for i in library:
+#     if i=='maths':
+#         print('hello')
+#         print(i,"book was found")
+#         break
+#     print(i)
+
+# password1="helloworld"
+# b=0
+# for i in range(3,0,-1):
+#     password=input("enter your password:")
+#     if password==password1:
+#         print('you are welcome')
+#         break
+#     elif(password!=password1):
+#         b=b+1
+#     print(3-b,'attempts left')
+#     if b==3:
+#         print('you have been blocked')
+    
+    
+# username='admin'
+# password=1234
+# for i in range(3):
+#     user_input=input("enter a vaslid username:")
+#     passw=int(input("enter a valid password:"))
+#     if username==user_input and password==passw:
+#         print("you are welcome")
+#         break
+#     else:
+        
+# a=[1,2,3,"d",4,5,"a"]
+# integers=[]
+# string=[]
+# for a in a:
+#     if type(a)==int:
+#         integers.append(a)
+#     elif type(a)==str:
+#         string.append(a)
+# print("integer", integers)
+# print("string", string)
+
+# for i in range(5,10,1):
+#     print(i," ram ")
+
+# a=[1,2,3,4]
+# for i in a:
+#     if(i==1):
+#         continue
+#     if(i==3):
+#         continue
+#     print(i)
+
+# num=int(input("Enter a number : "))
+# for i in range(1,11,1):
+#     print(num, "x", i, " = ", num*i)
+
+# actual="4444"
+# c=0
+# for i in range(0,3):
+#     password=input("Enter your Password : ").lower()
+#     if(password==actual):
+#         print("Welcome !!!")
+#         break
+#     elif(password!=actual):
+#         c=c+1
+#         if(c==3):
+#             print("You are Blocked !!")
+#             break
+#         print("You have ",3-c, "attempt left")
+        
+        
+        
+#Given list is [1,2,3,"d",4,5,"a"] separate the elements based on their datatypes.
+
+
+# given=[1,2,3,"d",4,5,"a"]
+# integer=[]
+# string=[]
+
+# for i in given:
+#     if(isinstance(i,int)):
+#         integer.append(i)
+#     else:
+#         string.append(i)
+
+# print(integer)
+# print(string)
+        
+#    Finding Even Number from a list list- 1, 2,3,4,5,6,7,8]
+# given=[1,2,3,4,5,6,7,8]
+
+# for i in given:
+#     if(i%2==0):
+#         print(i)
+
+# Write a Python program that asks the user to enter a word, and then uses a loop to count how many vowels are in that word.
+
+# word=input("Enter a word : ").lower()
+# vowel=['a','e','i','o','u']
+# c=0
+# for i in word:
+#     if i in vowel:
+#         c=c+1
+# print("There are",c, "vowel in",word)
+    
+
+
+
+# Write a program that records attendance from a list of students and also displays the list of students who were absent.
+
+# total=['suman','ganesh','aayush','chirayu','bikalpa','yanish','rupak','prasanga']
+# present=[]
+# absent=[]
+
+# for i in total :
+#     print(i)
+#     attendance=input("Enter yes if this student is present : ").lower()
+#     if(attendance=="yes"):
+#         present.append(i)
+#     else:
+#         absent.append(i)
+        
+# print("Present Students are : ",present)
+# print("Absent Students are : ",absent)
+    
+
+
+
+
+
+# Write a Python program that simulates attendance tracking for a list of students over multiple dates.
+# The program should:
+#   Store a predefined list of student names (['ram' , 'sita', 'hari']).
+#   Store a list of attendance dates (['2025-01-10', '2025-01-11']).
+#   Ask the user for each student on each date whether they are present (yes or no).
+#   Count and store how many days each student was present.
+#   Print the final attendance record showing each student's total number of present days.
+
+
+# students = ['ram', 'sita', 'hari']
+# dates = ['2025-01-10', '2025-01-11']
+
+# # Dictionary to store attendance counts
+# attendance_record = {student: 0 for student in students}
+
+# for i in dates:
+#     print(f"Attendance for date: {i}")
+#     for j in students:
+#         response = input(f"Is {j} present on {i}? (yes/no): ").strip().lower()
+#         if response == 'yes':
+#             attendance_record[j] += 1
+
+
+# print("\nFinal Attendance Record:")
+# for j, count in attendance_record.items():
+#     print(f"{j}: {count} day(s) present")
+
+# softwarica_building_floor=['floor1','floor2','floor3']
+# room_in_each_floor=['room1','room2','room3']
+# for i in softwarica_building_floor:  
+#     if i == 'floor1' :
+#      continue           
+# for j in room_in_each_floor: 
+#     if i=='floor2' and j in ['room2','room3'] or \
+#         i == 'floor3' and j in ['room1','room3']:
+#          continue
+#     print(i,'=',j)                        
+    
+    
+# for row  in range(6):
+#     for colum in range(4):
+#         if(colum==0 or colum==4)and (row!=0):
+#             print('*',end='')
+#         elif(colum==1 or colum==2 or colum==3) and (row==0 or row==3):
+#          print('*', end='')
+#         else:
+#             print(end=" ")
+#     print()
+    
+    
+# for row in range(7):
+#     for colum in range(4):
+#         if(colum==0) and (row!=0 and row!=7):
+#             print('*',end='')
+#         elif(colum==1 ) and (row==0 or row==7):
+#          print('*', end=' ')
+#         elif(colum==2 ) and (row==0 or row==4 or row==6):
+#          print('*', end=' ')
+#         elif(colum==3 ) and (row==0 or row==6 or row==4 or row==5):
+#          print('*', end=' ')
+#         else:
+#             print(end="  ")
+#     print()
+    
+
+
+# rows = 7
+# cols = 4
+
+# s = {
+#     (0, 0),(0, 1),(0, 2),
+#     (1, 0),         
+#     (2, 0),         
+#     (3, 0),(3, 1),(3, 2),
+#                   (4, 2),
+#                   (5, 2),
+#     (6, 0), (6,1),(6, 2),
+# }
+
+
+# for row in range(rows):
+#     for col in range(cols):
+#         if (row, col) in s:
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")
+#     print()  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rows=7
+cols=4
+
+a={
+    (0, 0),(0, 1),(0, 2),
+    (1, 0),        (1, 2),
+    (2, 0),       (2, 2),
+    (3, 0), (3, 1),(3, 2),
+    (4, 0),       (4, 2),
+    (5, 0),       (5, 2),
+    (6, 0),       (6, 2),
+}
+
+for row in range(rows):
+    for col in range(cols):
+        if (row,col) in a:
+            print('*', end=" ")
+        else:
+            print(" ", end=" ")
+    print()
